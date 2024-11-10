@@ -89,10 +89,10 @@
 }
 @media (max-width: 768px) {
     .navbar-brand img {
-        max-height: 35px;
+        max-height: 40px;
     }
     .navbar-brand h2{
-        font-size: 20px;
+        font-size: 15px;
     }
     
 }
@@ -150,6 +150,16 @@
 
     .navbar .nav-item .dropdown-menu {
         padding-left: 30px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+    .dropdown-menu {
+        right: 0;
+        left: auto;
+        top: 100%;
+        position: absolute;
     }
 }
 
