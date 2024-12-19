@@ -664,6 +664,31 @@
               <label for="cage">Service Type</label>
             </div>
             </div>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="appointment-date"
+                  name="appointment_date"
+                  min="<?php echo date('Y-m-d'); ?>"
+                  placeholder="Appointment Date"
+                />
+                <label for="appointment-date">Appointment Date</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating">
+                <input
+                  type="time"
+                  class="form-control"
+                  id="appointment-time"
+                  name="appointment_time"
+                  placeholder="Appointment Time"
+                />
+                <label for="appointment-time">Appointment Time</label>
+              </div>
+            </div>
             <div class="col-12">
             <div class="form-floating">
               <textarea
