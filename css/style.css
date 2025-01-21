@@ -310,8 +310,8 @@ h1 h2 h3 h4 h5 h6{
 .landing-bg {
     background: url(../img/Landing-bg.png) no-repeat center center;
     background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 @media (max-width: 767px) {
