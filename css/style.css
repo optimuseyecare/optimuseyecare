@@ -307,6 +307,133 @@ h1 h2 h3 h4 h5 h6{
     }
 }
 
+/* @media (max-width: 767px) {
+    .landing-bg .container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .container-xxl.py-5 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  @media (min-width: 768px) {
+    .two-per-row ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    .two-per-row ul li {
+      flex: 0 0 50%;
+      list-style: none;
+    }
+  } */
+
+  .doctor-main{
+    background: url(../img/doctors-bg.png) no-repeat right;
+    background-size: contain;
+    overflow: visible;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    color: black;
+  }
+  .doctor-main p{
+    font-size: 20px;
+  }
+
+  .eyecare-inner{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    color: black;
+  }
+  .eyecare-inner p{
+    font-size: 18px;
+  }
+  .eyecare-img img{
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .eyecare-main{
+    margin-top: 50px;
+  }
+
+  .our-mission{
+    background: url(../img/doctors-bg.png) no-repeat right;
+    background-size: contain;
+    overflow: visible;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    color: black;
+  }
+  .our-mission p{
+    font-size: 20px;
+  }
+  .mission-list{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(14, 0, 138, 0.027);
+  }
+
+  .insurance-list{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .payment-main {
+    background: url(../img/doctors-bg.png) no-repeat right;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+  }
+  .payment-main h1{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 30px;
+  }
+  .payment-main p{
+    font-size: 20px;
+    color: black;
+  }
+  .payment-main li{
+    font-size: 20px;
+    color: black;
+  }
+  .payment-image{
+    margin-top: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .two-per-row ul {
+      margin-left: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    .two-per-row ul li {
+      flex: 0 0 50%;
+      list-style: none;
+      padding: 10px 0;
+    }
+  }
+  .two-per-row ul li::before {
+    content: "\2022";
+    color: #015FC9;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
 .landing-bg {
     background: url(../img/Landing-bg.png) no-repeat center center;
     background-size: cover;
