@@ -8,7 +8,7 @@
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/logo.png" rel="icon" />
+    <link href="img/favicon.png" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
 
@@ -41,6 +42,27 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("7_hRQr5Sq8-FJ-epr");
+      })();
+    </script>
+    <style>
+      .payment-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .insurance-list, .payment-image {
+        flex: 0 0 48%;
+      }
+      @media (max-width: 768px) {
+        .insurance-list, .payment-image {
+          flex: 0 0 100%;
+        }
+      }
+    </style>
 
   </head>
 
@@ -65,6 +87,10 @@
             <small href="callto:7059983995">+1 705 998-3995</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-fax me-2"></small>
+            <small href="callto:7058067041">Fax: +1 705 806-7041</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
             <a href="mailto:info@optimuseyecare.ca">
             <small class="far fa-envelope-open me-2"></small>
             <small>info@optimuseyecare.ca</small>
@@ -72,21 +98,18 @@
           </div>
           <div class="h-100 d-inline-flex align-items-center me-4">
             <small class="far fa-clock me-2"></small>
-            <small>Mon - Fri : 09 AM - 05 PM</small>
+            <small>Mon - Fri : 08 AM - 04 PM</small>
           </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
           <div class="h-100 d-inline-flex align-items-center">
-            <a class="text-white-50 ms-4" href=""
+            <a class="text-white-50 ms-4" href="https://www.facebook.com/profile.php?id=61571932480312" target="_blank"
               ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a class="text-white-50 ms-4" href=""
-              ><i class="fab fa-twitter"></i
             ></a>
             <a class="text-white-50 ms-4" href=""
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a class="text-white-50 ms-4" href=""
+            <a class="text-white-50 ms-4" href="https://www.instagram.com/simcoeyes/" target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
@@ -100,13 +123,15 @@
       class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
     >
     <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <h2 class="m-0">
+        <h2 class="m-0" style="font-family: 'Roboto Mono', sans-serif;">
           <img
             class="img-fluid me-3 logo"
-            src="img/logo - Copy.png"
-            alt=""
-          />Optimus Eye Care
+            src="img/logo-header.png"
+            alt="Optimus Eye Care"
+            />
+            <!-- <br>  <span style="font-size: 18px; font-family: 'Roboto Mono', sans-serif;" class="d-block d-lg-inline">A Family Clinic Supporting Simcoe County</span> -->
         </h2>
+  
       </a>
       <button
         type="button"
@@ -117,144 +142,83 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto rounded pe-4 py-3 py-lg-0" style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 20px;">
+        <div class="navbar-nav mx-auto rounded pe-4 py-3 py-lg-0" style="font-family: 'Nunito', sans-serif; font-weight: 500; font-size: 20px;">
           <a href="index.html" class="nav-item nav-link active">Home</a>
+
           <div class="nav-item dropdown">
-        <a  
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              >About Us</a>
+            <div class="dropdown-menu border-0 m-0">
+              <a href="ourdoctors.html" class="dropdown-item">Our Doctors</a>
+              <a href="mission.html" class="dropdown-item">Our Mission</a>
+              <a href="payment.html" class="dropdown-item">Payment and Insurance</a>
+            </div>
+              </div>
+
+          <div class="nav-item dropdown">
+        <a
           href="#"
           class="nav-link dropdown-toggle"
-          >Eye Exams</a>
+          >Eye Care</a>
         <div class="dropdown-menu border-0 m-0">
-          <a href="#" class="dropdown-item">Adult and Senior Eye Exam</a>
-          <a href="#" class="dropdown-item">Children's Eye Exam</a>
-          <a href="#" class="dropdown-item">Diabetic Eye Exam</a>
+          <a href="adultandsenior.html" class="dropdown-item">Adult and Senior Eye Care</a>
+          <a href="children.html" class="dropdown-item">Children's Eye Care</a>
+          <a href="diabetic.html" class="dropdown-item">Diabetic Eye Care</a>
+          <a href="refractive.html" class="dropdown-item">Refractive Surgery Co-management</a>
+          <a href="emergency.html" class="dropdown-item">Emergency</a>
         </div>
           </div>
-          <div class="nav-item dropdown">
+        <!-- <div class="nav-item dropdown">
         <a
           href="#"
           class="nav-link dropdown-toggle"
           >Speciality Eye Care</a>
         <div class="dropdown-menu border-0 m-0">
-          <a href="#" class="dropdown-item">Dry Eye Treatment</a>
+          <a href="feature.html" class="dropdown-item">Dry Eye Treatment</a>
           <a href="#" class="dropdown-item">Myopia Control</a>
           <a href="#" class="dropdown-item">Color Blindness and Enhancement</a>
           <a href="#" class="dropdown-item">Laser Eye Surgery Consultation</a>
           <a href="404.html" class="dropdown-item">Eye Disease Diagnosis and Management</a>
           <a href="404.html" class="dropdown-item">Emergency Eye Care</a>
         </div>
-          </div>
-          <a href="about.html" class="nav-item nav-link">About Us</a>
+          </div> -->
+          <a href="#visit-section" class="nav-item nav-link">Visit Us</a>
         </div>
       </div>
-      <a href="" class="btn btn-primary px-3 d-none d-lg-block" style="margin-right: 20px;">Book Appointment</a>
-      <a href="contact.html" class="btn btn-primary px-3 d-none d-lg-block" style="margin-right: 20px;">Contact Us</a>
+      <a href="https://book2.getweave.com/3298bcbb-de67-4dd2-a34f-7407592f2940/request-appointment?source=WEBSITE"  target="_blank" class="btn btn-primary px-3 d-none d-lg-block" style="margin-right: 20px;">Book Appointment</a>
+      <a href="#contact-us" class="btn btn-primary px-3 d-none d-lg-block" style="margin-right: 20px;">Contact Us</a>
     </nav>
     <!-- Navbar End -->
 
-    <!-- Page Header Start -->
-    <div
-      class="container-fluid page-header py-5 mb-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <h1 class="display-4 animated slideInDown mb-4">Dry Eye Treatment</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Dry Eye Treatment</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-    <!-- Page Header End -->
+    <!-- Payment and Insurance -->
+    <div class="container eyecare-inner py-5">
+        <h1 class="text-center mb-4"><span style="color: brown;">Emergency</span></h1>
+    <div class="row eyecare-main">
+        <div class="col-md-6 eyecare-img">
+            <img src="img/emergency.png" alt="Adult and Senior Eye Exam" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h4>When is an emergency?</h4>
+            <ul>
+                <li><strong>Sudden vision loss:</strong> Partial or complete loss of vision in one or both eyes.</li>
+                <li><strong>Eye trauma or injury:</strong> Including cuts, bruises, or foreign objects in the eye.</li>
+                <li><strong>Eye infections:</strong> Redness, swelling, and discharge, such as conjunctivitis or corneal ulcers.</li>
+                <li><strong>Chemical exposure:</strong> Exposure to harmful chemicals, including irritants or cleaning agents.</li>
+                <li><strong>Eye strain or discomfort:</strong> Severe discomfort or persistent eye strain that affects daily activities.</li>
+                <li><strong>Glaucoma-related issues:</strong> Sudden increase in intraocular pressure, which may cause pain, blurred vision, or halos around lights.</li>
+                <li><strong>Retinal issues:</strong> Symptoms such as sudden flashes of light, floaters, or a curtain-like shadow over the vision.</li>
+                <li><strong>Corneal abrasions:</strong> Scratches or injuries to the cornea causing pain or vision problems.</li>
+                <li><strong>Contact lens complications:</strong> Infections or discomfort caused by improper use or wear of contact lenses.</li>
+                <li><strong>Sudden change in vision:</strong> Rapid changes in clarity, color perception, or field of vision.</li>
+            </ul>
+            <p>If you experience any of these symptoms, we recommend seeking immediate care at our clinic.</p>
+            <a href="https://book2.getweave.com/3298bcbb-de67-4dd2-a34f-7407592f2940/request-appointment?source=WEBSITE" target="_blank" class="btn btn-primary">Book Appointment</a>
 
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-        <h1 class="display-6 mb-5">Dry Eye Treatment</h1>
-        <p class="mb-4">
-          Dry eye is a common condition that occurs when your tears aren't able to provide adequate lubrication for your eyes. We offer comprehensive treatment options to help alleviate the discomfort and improve your eye health.
-        </p>
-        <div class="row g-3">
-          <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-          <div class="bg-light rounded h-100 p-3">
-            <div
-            class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
-            >
-            <img
-              class="align-self-center mb-3"
-              src="img/icon/icon-06-primary.png"
-              alt=""
-            />
-            <h5 class="mb-0">Comprehensive Diagnosis</h5>
-            </div>
-          </div>
-          </div>
-          <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-          <div class="bg-light rounded h-100 p-3">
-            <div
-            class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
-            >
-            <img
-              class="align-self-center mb-3"
-              src="img/icon/icon-03-primary.png"
-              alt=""
-            />
-            <h5 class="mb-0">Personalized Treatment</h5>
-            </div>
-          </div>
-          </div>
-          <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-          <div class="bg-light rounded h-100 p-3">
-            <div
-            class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
-            >
-            <img
-              class="align-self-center mb-3"
-              src="img/icon/icon-04-primary.png"
-              alt=""
-            />
-            <h5 class="mb-0">Advanced Technology</h5>
-            </div>
-          </div>
-          </div>
-          <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-          <div class="bg-light rounded h-100 p-3">
-            <div
-            class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
-            >
-            <img
-              class="align-self-center mb-3"
-              src="img/icon/icon-07-primary.png"
-              alt=""
-            />
-            <h5 class="mb-0">Ongoing Support</h5>
-            </div>
-          </div>
-          </div>
         </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div
-          class="position-relative rounded overflow-hidden h-100"
-          style="min-height: 400px"
-        >
-          <img
-          class="position-absolute w-100 h-100"
-          src="img/dry-eye-treatment.jpg"
-          alt=""
-          style="object-fit: cover"
-          />
-        </div>
-        </div>
-      </div>
-      </div>
     </div>
-    <!-- Features End -->
+    </div>
 
     <!-- Footer Start -->
     <div
@@ -264,26 +228,23 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h1 class="text-white mb-4">
+            <h1 class="text-white mb-4 nunito">
               <img
                 class="img-fluid me-3"
-                src="img/logo-light2.png"
+                src="img/logo-footer.png"
                 alt=""
-                style="width: 30%;"
-              />Optimus Eye Care
+              />
             </h1>
+          
             <p>
                 Providing comprehensive eye care services. Our team is dedicated to ensuring the best vision health for you and your family.
             </p>
             <div class="d-flex pt-2">
-              <a class="btn btn-square me-1" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-square me-1" href=""
+              <a class="btn btn-square me-1" href="https://www.facebook.com/profile.php?id=61571932480312" target="_blank"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a class="btn btn-square me-1" href=""
-                ><i class="fab fa-youtube"></i
+              <a class="btn btn-square me-1" href="https://www.instagram.com/simcoeyes/" target="_blank"
+                ><i class="fab fa-instagram"></i
               ></a>
               <a class="btn btn-square me-0" href=""
                 ><i class="fab fa-linkedin-in"></i
@@ -291,23 +252,24 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Address</h5>
+            <h5 class="text-light mb-4 nunito">Address</h5>
             <p>
-              <i class="fa fa-map-marker-alt me-3"></i>innisfil, ON L9S 1A7
+              <i class="fa fa-map-marker-alt me-3"></i>Suite 2700 - 7325 Yonge Street, Innisfil, ON L9S 2M6
             </p>
-            <p><i class="fa fa-phone-alt me-3"></i>+1 (705) 998-3995</p>
-            <p><i class="fa fa-envelope me-3"></i>info@optimuseyecare.ca</p>
+            <a href="tel:7059983995"><p><i class="fa fa-phone-alt me-3"></i>+1 705 998-3995</p></a>
+            <a href="tel:7058067041"><p><i class="fa fa-fax me-3"></i>Fax: +1 705 806-7041</p></a>
+            <a href="mainto:info@optimuseyecare.ca"><p><i class="fa fa-envelope me-3"></i>info@optimuseyecare.ca</p></a>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
+            <h5 class="text-light mb-4 nunito">Quick Links</h5>
+            <a class="btn btn-link" href="#">Home</a>
+            <a class="btn btn-link" href="#contact-us">Contact Us</a>
+            <!-- <a class="btn btn-link" href="">Our Services</a>
             <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
+            <a class="btn btn-link" href="">Support</a> -->
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Newsletter</h5>
+            <h5 class="text-light mb-4 nunito">Newsletter</h5>
             <p>Subscribe to our newsletter.</p>
             <div class="position-relative mx-auto" style="max-width: 400px">
               <input
@@ -333,7 +295,7 @@
             </div>
             <div class="col-md-6 text-center text-md-end">
               <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By <a href="https://webloped.ca">Webloped Web</a>
+              <!-- Designed By <a href="https://webloped.ca">Webloped Web</a> -->
             </div>
           </div>
         </div>
@@ -357,5 +319,20 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log('Form submitted');
+        emailjs.sendForm('service_lv6wc26', 'template_yuouklm', this)
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('SUCCESS!');
+          }, function(error) {
+            console.log('FAILED...', error);
+            alert('FAILED...', error);
+          });
+      });
+    </script>
   </body>
 </html>
