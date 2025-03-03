@@ -106,10 +106,10 @@
             <a class="text-white-50 ms-4" href="https://www.facebook.com/profile.php?id=61571932480312" target="_blank"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a class="text-white-50 ms-4" href=""
-              ><i class="fab fa-linkedin-in"></i
+            <a class="text-white-50 ms-4" href="https://www.youtube.com/@optimuseyecare" target="_blank"
+              ><i class="fab fa-youtube"></i
             ></a>
-            <a class="text-white-50 ms-4" href="https://www.instagram.com/simcoeyes/" target="_blank"
+            <a class="text-white-50 ms-4" href="https://www.instagram.com/optimuseyecare.ca" target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
@@ -220,11 +220,11 @@
               <a class="btn btn-square me-1" href="https://www.facebook.com/profile.php?id=61571932480312" target="_blank"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a class="btn btn-square me-1" href="https://www.instagram.com/simcoeyes/" target="_blank"
+              <a class="btn btn-square me-1" href="https://www.instagram.com/optimuseyecare.ca" target="_blank"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a class="btn btn-square me-0" href=""
-                ><i class="fab fa-linkedin-in"></i
+              <a class="btn btn-square me-0" href="https://www.youtube.com/@optimuseyecare" target="_blank"
+                ><i class="fab fa-youtube"></i
               ></a>
             </div>
           </div>
@@ -297,19 +297,5 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/popup.js"></script>
-    <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        console.log('Form submitted');
-        emailjs.sendForm('service_lv6wc26', 'template_yuouklm', this)
-          .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            alert('SUCCESS!');
-          }, function(error) {
-            console.log('FAILED...', error);
-            alert('FAILED...', error);
-          });
-      });
-    </script>
   </body>
 </html>
